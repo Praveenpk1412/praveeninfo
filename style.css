@@ -20,6 +20,7 @@ body {
 
 section {
   width: 90%;
+  height: 60%;
   background: rgba(13, 14, 13, 0.1);
   backdrop-filter: blur(13px);
   border-radius: 20px;
@@ -29,23 +30,23 @@ section {
   padding: 20px;
 }
 
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 10px 0;
-}
 
 .menu {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+
+  
   list-style: none;
+  /* border: 1px solid red; */
   gap: 20px;
 }
+.menu li{
+  display: inline-block;
 
+  padding: 5px 10px;
+  width: max-content;
+}
+.menu li:not(:last-child){
+  border-right:1px solid rgba(245, 222, 179, 0.555) ;
+}
 .menu li a {
   font-size: 1rem;
   color: white;
